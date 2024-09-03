@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portefeuille de compétences - Liam GHOGGAL</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      .mindmap {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .node {
+        background-color: #fff;
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .node:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .node.active {
+        background-color: #e0e0e0;
+      }
+      .children {
+        display: none;
+        margin-left: 20px;
+      }
+      .children.show {
+        display: block;
+      }
+      .ac-work {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mindmap">
+      <div class="node" onclick="toggleChildren(event, this)">
+        Compétences Liam GHOGGAL
+        <div class="children">
+          <div class="node" onclick="toggleChildren(event, this)">
+            Compétences AC
+            <div class="children">
+              <div class="node">
+                AC34.01
+                <div class="ac-work">
+                  Travaux associés:
+                  <ul>
+                    <li>
+                      SAE 501 : Site vitrine de l'agence Grand Line Agency avec
+                      Astro JS
+                    </li>
+                    <li>Alternance : Développement d'API avec Laravel</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="node">
+                AC34.02
+                <div class="ac-work">
+                  Travaux associés:
+                  <ul>
+                    <li>SAE 501 : Application Mobile UnISekai Dispositif RA</li>
+                    <li>
+                      Alternance : Création d'une librairie de composants UI
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="node" onclick="toggleChildren(event, this)">
+            Compétences de spécialités
+            <div class="children">
+              <div class="node">
+                AC34.03
+                <div class="ac-work">
+                  Travaux associés:
+                  <ul>
+                    <li>
+                      Alternance : Déploiement et maintenance d'une application
+                      web
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="node">
+                AC34.04
+                <div class="ac-work">
+                  Travaux associés:
+                  <ul>
+                    <li>
+                      Alternance : Pilotage d'une application avec le service
+                      Réseau
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="node">
+                AC34.05
+                <div class="ac-work">
+                  Travaux associés:
+                  <ul>
+                    <li>
+                      Alternance : Suivi qualité d'une application en relation
+                      avec le Service Relations Entreprise
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="node">AC35.01</div>
+              <div class="node">AC35.02</div>
+            </div>
+          </div>
+          <div class="node" onclick="toggleChildren(event, this)">
+            Entreprendre dans le secteur du numérique
+            <div class="children">
+              <div class="node">
+                AC35.03
+                <div class="ac-work">
+                  Travaux associés:
+                  <ul>
+                    <li>
+                      SAE 501 : Création d'une entreprise fictive GrandLine
+                      Agency
+                    </li>
+                    <li>
+                      Projet perso : Création d'une société SAS dans le
+                      numérique et la musique
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="node">
+                AC35.04
+                <div class="ac-work">
+                  Travaux associés:
+                  <ul>
+                    <li>SAE 501 : Soutenance de fin de projet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="node" onclick="toggleChildren(event, this)">
+            Travaux Choisis
+            <div class="children">
+              <div class="node">
+                SAE 501 : Site vitrine de l'agence Grand Line Agency avec Astro
+                JS
+              </div>
+              <div class="node">
+                Alternance : Développement d'API avec Laravel
+              </div>
+              <div class="node">
+                SAE 501 : Application Mobile UnISekai Dispositif RA
+              </div>
+              <div class="node">
+                Alternance : Création d'une librairie de composants UI
+              </div>
+              <div class="node">
+                Alternance : Déploiement et maintenance d'une application web
+              </div>
+              <div class="node">
+                Alternance : Pilotage d'une application avec le service Réseau
+              </div>
+              <div class="node">
+                Alternance : Suivi qualité d'une application en relation avec le
+                Service Relations Entreprise
+              </div>
+              <div class="node">
+                SAE 501 : Création d'une entreprise fictive GrandLine Agency
+              </div>
+              <div class="node">
+                Projet perso : Création d'une société SAS dans le numérique et
+                la musique
+              </div>
+              <div class="node">SAE 501 : Soutenance de fin de projet</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleChildren(event, node) {
+        event.stopPropagation()
+        node.classList.toggle("active")
+        const children = node.querySelector(".children")
+        if (children) {
+          children.classList.toggle("show")
+        }
+      }
+    </script>
+  </body>
+</html>
