@@ -46,6 +46,20 @@
         color: #555;
         margin-top: 5px;
       }
+      .details {
+        font-size: 0.85em;
+        color: #666;
+        margin-top: 8px;
+      }
+      .category {
+        font-weight: bold;
+        color: #1a5f7a;
+      }
+      .work-item {
+        margin-bottom: 15px;
+        border-left: 2px solid #1a5f7a;
+        padding-left: 10px;
+      }
     </style>
   </head>
   <body>
@@ -53,143 +67,361 @@
       <div class="node" onclick="toggleChildren(event, this)">
         Compétences Liam GHOGGAL
         <div class="children">
-          <div class="node" onclick="toggleChildren(event, this)">
-            Compétences AC
+          <div class="node category" onclick="toggleChildren(event, this)">
+            Compétences de Spécialité
             <div class="children">
               <div class="node">
                 AC34.01
                 <div class="ac-work">
-                  Travaux associés:
-                  <ul>
-                    <li>
+                  <div class="work-item">
+                    <h4>
                       SAE 501 : Site vitrine de l'agence Grand Line Agency avec
                       Astro JS
-                    </li>
-                    <li>Alternance : Développement d'API avec Laravel</li>
-                  </ul>
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Développement
+                      front-end, intégration du framework Astro JS
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la maîtrise des technologies web modernes et la
+                      capacité à créer des sites performants
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Utilisation efficace
+                      d'Astro JS pour créer un site vitrine rapide et optimisé
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <h4>Alternance : Développement d'API avec Laravel</h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Conception et
+                      implémentation d'API RESTful
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong> Montre
+                      la capacité à développer des solutions back-end robustes
+                      et scalables
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création d'API
+                      performantes et bien documentées, facilitant l'intégration
+                      avec divers clients
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="node">
                 AC34.02
                 <div class="ac-work">
-                  Travaux associés:
-                  <ul>
-                    <li>SAE 501 : Application Mobile UnISekai Dispositif RA</li>
-                    <li>
+                  <div class="work-item">
+                    <h4>SAE 501 : Application Mobile UnISekai Dispositif RA</h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Développement
+                      de fonctionnalités de réalité augmentée
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à intégrer des technologies avancées
+                      dans des applications mobiles
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Implémentation
+                      réussie de fonctionnalités RA innovantes, améliorant
+                      l'expérience utilisateur
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <h4>
                       Alternance : Création d'une librairie de composants UI
-                    </li>
-                  </ul>
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Conception et
+                      développement de composants réutilisables
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong> Montre
+                      la capacité à créer des solutions modulaires et
+                      maintenables
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création d'une
+                      librairie cohérente et facile à utiliser, améliorant
+                      l'efficacité du développement
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="node" onclick="toggleChildren(event, this)">
-            Compétences de spécialités
-            <div class="children">
               <div class="node">
                 AC34.03
                 <div class="ac-work">
-                  Travaux associés:
-                  <ul>
-                    <li>
+                  <div class="work-item">
+                    <h4>
                       Alternance : Déploiement et maintenance d'une application
                       web
-                    </li>
-                  </ul>
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Configuration
+                      des environnements de déploiement et mise en place de
+                      processus de maintenance
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à gérer le cycle de vie complet d'une
+                      application
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Mise en place
+                      réussie d'un pipeline de déploiement continu et de
+                      procédures de maintenance efficaces
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="node">
                 AC34.04
                 <div class="ac-work">
-                  Travaux associés:
-                  <ul>
-                    <li>
+                  <div class="work-item">
+                    <h4>
                       Alternance : Pilotage d'une application avec le service
                       Réseau
-                    </li>
-                  </ul>
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Coordination
+                      avec le service Réseau pour optimiser les performances de
+                      l'application
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong> Montre
+                      la capacité à travailler en collaboration avec d'autres
+                      services techniques
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Amélioration
+                      significative des performances de l'application grâce à
+                      une collaboration efficace
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="node">
                 AC34.05
                 <div class="ac-work">
-                  Travaux associés:
-                  <ul>
-                    <li>
+                  <div class="work-item">
+                    <h4>
                       Alternance : Suivi qualité d'une application en relation
                       avec le Service Relations Entreprise
-                    </li>
-                  </ul>
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Mise en place
+                      de processus de suivi qualité et communication avec le
+                      Service Relations Entreprise
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à assurer la qualité des livrables et
+                      à communiquer efficacement avec les parties prenantes
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Amélioration de la
+                      satisfaction client grâce à un suivi qualité rigoureux et
+                      une communication transparente
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="node">AC35.01</div>
-              <div class="node">AC35.02</div>
             </div>
           </div>
-          <div class="node" onclick="toggleChildren(event, this)">
-            Entreprendre dans le secteur du numérique
+          <div class="node category" onclick="toggleChildren(event, this)">
+            Compétences Entreprendre
             <div class="children">
               <div class="node">
                 AC35.03
                 <div class="ac-work">
-                  Travaux associés:
-                  <ul>
-                    <li>
+                  <div class="work-item">
+                    <h4>
                       SAE 501 : Création d'une entreprise fictive GrandLine
                       Agency
-                    </li>
-                    <li>
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Élaboration du
+                      business plan et de la stratégie marketing
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à concevoir et planifier un projet
+                      entrepreneurial
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création d'un plan
+                      d'affaires complet et réaliste, prenant en compte les
+                      aspects financiers et marketing
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <h4>
                       Projet perso : Création d'une société SAS dans le
                       numérique et la musique
-                    </li>
-                  </ul>
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Gestion
+                      administrative et juridique de la création de l'entreprise
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong> Montre
+                      la capacité à concrétiser un projet entrepreneurial dans
+                      un contexte réel
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création effective
+                      d'une société, démontrant la maîtrise des aspects légaux
+                      et administratifs de l'entrepreneuriat
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="node">
                 AC35.04
                 <div class="ac-work">
-                  Travaux associés:
-                  <ul>
-                    <li>SAE 501 : Soutenance de fin de projet</li>
-                  </ul>
+                  <div class="work-item">
+                    <h4>SAE 501 : Soutenance de fin de projet</h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Préparation et
+                      présentation du projet entrepreneurial
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à communiquer efficacement sur un
+                      projet et à le défendre devant un jury
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Présentation claire
+                      et convaincante du projet, réponses pertinentes aux
+                      questions du jury
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="node" onclick="toggleChildren(event, this)">
-            Travaux Choisis
+          <div class="node category" onclick="toggleChildren(event, this)">
+            Compétences Métiers
             <div class="children">
               <div class="node">
-                SAE 501 : Site vitrine de l'agence Grand Line Agency avec Astro
-                JS
+                CM01 : Développement Full Stack
+                <div class="ac-work">
+                  <div class="work-item">
+                    <h4>
+                      SAE 501 : Site vitrine de l'agence Grand Line Agency avec
+                      Astro JS
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Développement
+                      front-end et back-end du site
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la maîtrise des technologies front-end et
+                      back-end modernes
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création d'un site
+                      web complet, de la conception à la mise en production
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <h4>Alternance : Développement d'API avec Laravel</h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Conception et
+                      implémentation d'API RESTful
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong> Montre
+                      la capacité à développer des solutions back-end robustes
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création d'API
+                      performantes et bien documentées
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <h4>SAE 501 : Application Mobile UnISekai Dispositif RA</h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Développement
+                      de l'application mobile et intégration de la RA
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à travailler sur des projets
+                      innovants multi-plateformes
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Réalisation d'une
+                      application mobile complexe intégrant des technologies
+                      avancées
+                    </p>
+                  </div>
+                </div>
               </div>
               <div class="node">
-                Alternance : Développement d'API avec Laravel
+                CM02 : Gestion de Projet et Entrepreneuriat
+                <div class="ac-work">
+                  <div class="work-item">
+                    <h4>
+                      SAE 501 : Création d'une entreprise fictive GrandLine
+                      Agency
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Élaboration du
+                      business plan et de la stratégie
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à concevoir et planifier un projet
+                      entrepreneurial
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création d'un plan
+                      d'affaires complet et réaliste
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <h4>
+                      Projet perso : Création d'une société SAS dans le
+                      numérique et la musique
+                    </h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Gestion
+                      administrative et juridique de la création de l'entreprise
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong> Montre
+                      la capacité à concrétiser un projet entrepreneurial
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Création effective
+                      d'une société, démontrant la maîtrise des aspects légaux
+                      et administratifs
+                    </p>
+                  </div>
+                  <div class="work-item">
+                    <h4>SAE 501 : Soutenance de fin de projet</h4>
+                    <p>
+                      <strong>Ma part dans le travail :</strong> Préparation et
+                      présentation du projet
+                    </p>
+                    <p>
+                      <strong>En quoi cela illustre l'AC visé :</strong>
+                      Démontre la capacité à communiquer efficacement sur un
+                      projet
+                    </p>
+                    <p>
+                      <strong>Mes justifications :</strong> Présentation claire
+                      et convaincante, réponses pertinentes aux questions
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="node">
-                SAE 501 : Application Mobile UnISekai Dispositif RA
-              </div>
-              <div class="node">
-                Alternance : Création d'une librairie de composants UI
-              </div>
-              <div class="node">
-                Alternance : Déploiement et maintenance d'une application web
-              </div>
-              <div class="node">
-                Alternance : Pilotage d'une application avec le service Réseau
-              </div>
-              <div class="node">
-                Alternance : Suivi qualité d'une application en relation avec le
-                Service Relations Entreprise
-              </div>
-              <div class="node">
-                SAE 501 : Création d'une entreprise fictive GrandLine Agency
-              </div>
-              <div class="node">
-                Projet perso : Création d'une société SAS dans le numérique et
-                la musique
-              </div>
-              <div class="node">SAE 501 : Soutenance de fin de projet</div>
             </div>
           </div>
         </div>
